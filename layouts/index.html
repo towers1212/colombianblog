@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombian Blog</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- Header with background image -->
+    <header>
+        <img src="/images/header.jpg" alt="Colombia Header">
+        <h1>Colombian Blog</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    </nav>
+<!-- Photo Gallery Banner -->
+<section class="photo-gallery">
+    <img src="/images/gallery1.jpg" alt="Gallery Image 1">
+    <img src="/images/gallery2.jpg" alt="Gallery Image 2">
+    <img src="/images/gallery3.jpg" alt="Gallery Image 3">
+    <img src="/images/gallery4.jpg" alt="Gallery Image 4">
+</section>
+
+    </section>
+
+    <!-- Posts Grid -->
+    <section class="posts">
+        {{ range .Site.RegularPages }}
+        <article class="post">
+            <a href="{{ .RelPermalink }}">
+                <img src="/images/{{ .Params.image }}" alt="{{ .Title }}">
+                <h2>{{ .Title }}</h2>
+            </a>
+        </article>
+        {{ end }}
+    </section>
+
+    <!-- Search Bar -->
+    <aside class="search">
+        <h3>Search</h3>
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </aside>
+
+</body>
+</html>
+

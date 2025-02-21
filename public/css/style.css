@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff5733, #c70039);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Header Image */
+header img {
+    max-width: 80%; /* Ajusta el tamaño al 50% del ancho disponible */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+
+/* Creative H1 */
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Simple Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.categories div {
+    text-align: center;
+    width: 100px;
+}
+
+.categories img {
+    width: 50px;
+    height: 50px;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.post {
+    width: 350px;
+    border: 0px solid #ddd;
+    padding: 0px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+.search input {
+    padding: 5px;
+    width: 200px;
+}
+
+.search button {
+    padding: 8px;
+}
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.photo-gallery img {
+    width: 800px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #fff;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: dark red;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Images */
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* Blog List */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ff5733;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #c70039;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}
+/* Post Content */
+main.post-container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: justify;
+}
+
+/* Post Title */
+main.post-container h1 {
+    text-align: center;
+    color: #ff5733;
+}
+
+/* Post Images */
+main.post-container img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+/* Centrar los títulos h3 */
+h3 {
+    text-align: center;
+color: red;
+}
+
+/* Justificar los párrafos p dentro del artículo */
+article p {
+    text-align: justify;
+}
+
+/* Post Paragraphs */
+main.post-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #777;
+}
+
+/* Post Date */
+.post-date {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+/* Estilo para el botón */
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFB300;  /* Color de fondo */
+    color: white;  /* Color del texto */
+    text-align: center;
+    text-decoration: none;  /* Eliminar subrayado */
+    border-radius: 5px;  /* Bordes redondeados */
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #2980b9;  /* Color al pasar el ratón */
+}
+
