@@ -1,0 +1,32 @@
+name: Hugo
+
+on:
+  push:
+    branches:
+      - main  # Cambia esto si usas otra rama
+  pull_request:
+    branches:
+      - main  # Cambia esto si usas otra rama
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.88.1'  # Puedes cambiar la versión si necesitas una versión diferente
+
+      - name: Build Hugo site
+        run: hugo --minify
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_access_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+
