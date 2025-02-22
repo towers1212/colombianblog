@@ -16,10 +16,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-     - name: Set up Hugo
-  uses: peaceiris/actions-hugo@v2
-  with:
-    hugo-version: '0.144.2'  # Cambia esto a la versión que prefieras
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.144.2'  # Cambié a la versión de Hugo que mencionaste
 
       - name: Build Hugo site
         run: hugo --minify
@@ -27,6 +27,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_access_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Asegúrate de usar el token adecuado
+          publish_dir: ./public  # Directorio donde Hugo genera los archivos
